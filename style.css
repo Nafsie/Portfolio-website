@@ -7,7 +7,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Navigation */
+/* Header / Navigation */
 header {
   background-color: #1e1e1e;
   color: white;
@@ -39,30 +39,43 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Hero Section */
-#hero {
-  background-color: #007acc;
-  color: white;
+/* Hero / Home */
+#home {
   text-align: center;
+  background: #007acc;
+  color: white;
   padding: 4rem 2rem;
 }
 
-#hero h2 {
-  font-size: 2.5rem;
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-#hero p {
-  font-size: 1.2rem;
-}
-
-/* About Section */
+/* Sections */
 section {
   padding: 3rem 2rem;
   max-width: 1000px;
   margin: auto;
 }
 
-/* Projects Section */
+h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Resume */
+.resume-section {
+  background: white;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Projects */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -76,6 +89,26 @@ section {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Lab Challenges */
+.lab-challenge {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+#contact ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#contact li {
+  margin: 0.5rem 0;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -83,21 +116,23 @@ footer {
   background: #1e1e1e;
   color: white;
 }
-
-/* Experience Section */
-#experience .experience-item {
-  background: white;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-#experience .experience-item h3 {
-  margin-top: 0;
-}
-
-#experience .experience-item ul {
+/* Resume Section Update */
+.resume-section ul {
   padding-left: 1.2rem;
-  margin: 0.5rem 0 0 0;
+  margin: 0.5rem 0 1rem 0;
 }
+
+.resume-section h4 {
+  margin-bottom: 0.3rem;
+  color: #007acc;
+}
+
+.resume-section p em {
+  font-style: italic;
+  color: #555;
+}
+.resume-section ul ul {
+  padding-left: 1.5rem;
+  list-style-type: circle;
+}
+
